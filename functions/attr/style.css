@@ -1,0 +1,20 @@
+div {
+  font-size: 5rem;
+  &::after {
+    display: block;
+  }
+  &[data-site*="aws"]::after {
+    content: url("https://a0.awsstatic.com/libra-css/images/site/touch-icon-iphone-114-smile.png")
+      "Address: " attr(data-site);
+    color: #f59400;
+  }
+  &[data-site*="google"]::after {
+    content: url("https://www.google.com//images/branding/product/1x/gsa_android_144dp.png")
+      attr(data-site);
+    color: #14e11b;
+  }
+  &[data-site*="github"]::after {
+    content: url("https://github.com/fluidicon.png") attr(data-site);
+    color: #3d14e1;
+  }
+}
