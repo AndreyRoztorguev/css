@@ -1,0 +1,22 @@
+:root {
+  --bg: rgb(90, 27, 124);
+}
+
+.function-color-darken {
+  width: 300px;
+  height: 200px;
+  background-color: color(from var(--bg) srgb r g b / 0.4);
+  &:hover {
+    background-color: color(from var(--bg) srgb r g b / 1);
+  }
+}
+
+.function-color-lighter {
+  --bg: hsl(97, 66%, 34%);
+  width: 300px;
+  height: 200px;
+  background-color: color(from var(--bg) srgb r g b);
+  &:hover {
+    background-color: color(from var(--bg) srgb r g b / 0.5);
+  }
+}
