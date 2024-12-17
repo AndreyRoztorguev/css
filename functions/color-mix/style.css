@@ -1,0 +1,7 @@
+.function-color-mix-block {
+  width: 400px;
+  height: 300px;
+  font-size: 2rem;
+  color: color-mix(in hsl, hsla(170, 84%, 54%, 0.3) 66%, coral);
+  background-color: color-mix(in srgb, red 40%, #3ed 60%);
+}
