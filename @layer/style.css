@@ -1,0 +1,13 @@
+/* cascade order */
+@layer reset, normalize, base, theme, components;
+
+@import url("./layers/reset.css");
+@import url("./layers/base.css");
+@import url("./layers/theme.css");
+@import url("./layers/components.css");
+@import url("./layers/normalize.css");
+
+body {
+  /* it overrides all layers */
+  background-color: rgb(230, 131, 10);
+}

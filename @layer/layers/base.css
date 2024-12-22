@@ -1,0 +1,7 @@
+@import url("../../node_modules/purecss/build/pure-min.css") layer(base);
+
+@layer base {
+  .pure-button {
+    background: #0f0;
+  }
+}
