@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  /* min: 200px, max: 300px, preffered: 30vw */
+  grid-template-columns: repeat(3, clamp(200px, 30vw, 300px));
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.subgrid {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+/* Other styles */
+.subgrid {
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.subgrid > header,
+.subgrid > main,
+.subgrid > footer {
+  padding: 10px;
+}
+
+.subgrid > header {
+  background: #80ffb38b;
+}
+.subgrid > main {
+  background: #fff4808b;
+}
+.subgrid > footer {
+  background: #a480ff8b;
+}
