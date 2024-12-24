@@ -1,0 +1,4 @@
+/* use this styles from <p> that are direct children of .block */
+.block > p {
+  color: coral;
+}

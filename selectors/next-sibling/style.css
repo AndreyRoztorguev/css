@@ -1,0 +1,6 @@
+/* apply styles only on <p> that is followed immediately after .title */
+.title + p {
+  font-size: 1.2rem;
+  color: darkmagenta;
+  text-transform: uppercase;
+}
