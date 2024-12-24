@@ -1,0 +1,15 @@
+@namespace svgNamespace url("http://www.w3.org/2000/svg");
+@namespace htmlNameSpace url("http://www.w3.org/1999/xhtml");
+
+a {
+  font-size: 0.5rem;
+  text-indent: 10px;
+}
+
+htmlNameSpace|a {
+  color: green;
+}
+
+svgNamespace|a {
+  fill: red;
+}
