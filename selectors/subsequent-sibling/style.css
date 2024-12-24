@@ -1,0 +1,4 @@
+/* All <p> that are located after h1 in current level of nesting */
+h1 ~ p {
+  color: rgb(100, 49, 220);
+}
