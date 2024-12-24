@@ -1,0 +1,4 @@
+/* style all <p> in .parent */
+.parent p {
+  color: violet;
+}
