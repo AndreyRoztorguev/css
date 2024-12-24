@@ -1,0 +1,26 @@
+.block {
+  border: 2px solid rgb(204, 173, 173);
+  height: 400px;
+  padding: 1rem;
+}
+
+.nested {
+  height: 200px;
+  border: 2px solid red;
+}
+
+/* selects all .block that have <p> as a child */
+.block:has(p) {
+  background: rgb(69, 10, 123);
+}
+
+/* selects all .block that have .nested as a child */
+.block:has(.nested) {
+  color: rgb(241, 241, 241);
+}
+
+/*  selects all <p> elements that are immediately followed by a sibling element with the class .nested.  */
+p:has(+ .nested) {
+  border: 1px dashed gray;
+  margin-bottom: 100px;
+}
