@@ -1,0 +1,27 @@
+.block {
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  label:focus-within {
+    font-size: 2rem;
+    color: green;
+  }
+}
+
+.block-2 {
+  border: 1px solid;
+  color: gray;
+  padding: 4px;
+}
+
+.block-2:focus-within {
+  background: #ff8;
+  color: black;
+}
+.block-2 label:focus-within {
+  color: rgb(255, 0, 183);
+}
+
+input {
+  margin: 4px;
+}
