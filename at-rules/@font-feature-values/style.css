@@ -1,0 +1,25 @@
+/* Define font feature values for "Crimson Pro" */
+@font-feature-values 'Crimson Pro' {
+  @styleset {
+    swash: 1; /* Swashes for decorative letters */
+    stylistic-alt: 2; /* Stylistic alternate glyphs */
+  }
+  @character-variant {
+    alt-quote: 1; /* Alternate quotation marks */
+  }
+}
+
+/* Apply the custom feature values */
+body {
+  font-family: "Crimson Pro", serif;
+}
+
+.with-swash {
+  font-variant: styleset(swash);
+  font-size: 2rem;
+}
+
+.with-stylistic {
+  font-variant: styleset(stylistic-alt);
+  font-size: 1.5rem;
+}
